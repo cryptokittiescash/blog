@@ -1,4 +1,5 @@
 +++
+draft = true
 title = "Draft Blogpost"
 tags = [
     "Kitties",
