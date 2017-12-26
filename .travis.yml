@@ -1,31 +1,22 @@
 language: go
-
 go:
 - '1.8'
-
 install:
 - go get -v github.com/gohugoio/hugo
-- sudo pip install Pygments
-- sudo pip install s3cmd
-
 before_script:
 - hugo version
-- pygmentize -V
-- python --version
-- s3cmd --version
-
 script:
 - hugo --buildFuture -v
-
 after_success:
 - ls public/
-
 deploy:
+  provider: gcs
+  access_key_id: GOOG3UJZKTUH2MM2KWGJ
+  secret_access_key:
+    secure: h7CMprNSPDXkGT0KKRo7012HIO/vOw3RBjKmpzcU/GxeKrtow27gb6Eq8YUtpHETst46/rmEKEesQwYLdyPrOWQUwTOu5b+mWfz+9GZmkKzEVeZ75ec0Nyr3K8uah2NYYtNSmp2W76F4pu9Jy7jzEoxUsUIqxhTcTXTGDYWGcG3SDwCa+LsOyeqj66MhMc3CjzsQ4lbxHGqNLwoH6fNsFnL+qiPk2FD2r4fFbUtn59VHuMpA30f7xHnTY70VzZmfSzUarnSz8OL5prunjqjWpb5gSvP8i967ZJSxCtJEonJvX/IrxS8dw4QffUqH/og3BT7z3Bs35G5Ux+PgLOTGGet9A3Bom3lscvWrKQu8lwAJVwvfY7ylqsUzczqhYPCJZhzOQGiGDhvw5GI7C02eHqQwv1yd7jT3NIPk2cTlF4/mI5hRQfeob1cpLSjiMH2gBh4djsjJvAWHjgJA6GS4rX+vUl845IeGqJYx7Kg1m9ZULGSNyLcTVggfuE7tHknbAmbZblk9mQuDAoad4mBCEH1HfCk9eYUldpN2clt3FfWRhXZnRZIJqrI+xA3hp/llNc8iENJKuYgOxH/t7iFCN2VO/XSA9lLQueZNDj2j0Slh82BQcrQJaMvHtKWIl7bR4MPWJ1/PYFnoj1xUhdg57/QrtX4WOwsb1Vy4DFRC9uQ=
+  bucket: blog.kittycash.io
   skip_cleanup: true
-  provider: script
-  script: s3cmd --access_key="${AWS_ACCESS_KEY_ID}" --secret_key="${AWS_SECRET_ACCESS_KEY}" --region=ap-southeast-1 sync --delete-removed --acl-public --guess-mime-type --no-mime-magic --recursive public/ s3://blog.skycoin.net/
+  acl: public-read
+  local-dir: public
   on:
-    branch: master
-
-after_deploy:
-- s3cmd --access_key="${AWS_ACCESS_KEY_ID}" --secret_key="${AWS_SECRET_ACCESS_KEY}" --region=ap-southeast-1 ls s3://blog.skycoin.net/
+    repo: kittycash/blog
