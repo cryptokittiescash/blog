@@ -1,4 +1,4 @@
-baseURL = "https://blog.kittycash.io/"
+baseURL = "https://kittycash.io/blog"
 languageCode = "en-us"
 title = "Kitty Cash Blog"
 defaultContentLanguage = "en"
