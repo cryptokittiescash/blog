@@ -1,7 +1,7 @@
 Kitty Cash Blog
 ============
 
-https://blog.kittycash.io/
+https://www.kittycash.com/blog
 
 This blog uses [hugo](https://gohugo.io/) to generate a static website from markdown files.
 
@@ -22,7 +22,7 @@ Make sure that your posts compile without error. Check the formatting.
 
 Then, commit the changes and push.
 
-If there are no problems, then https://blog.kittycash.net/ will automatically update in a few minutes.
+If there are no problems, then https://www.kittycash.com/blog will automatically update in a few minutes.
 
 Translations
 ============
