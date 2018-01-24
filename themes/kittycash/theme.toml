@@ -1,8 +1,8 @@
 name = "Kitty Cash"
 description = "Foundations for the new kitties · Kitty Cash"
-homepage = "https://www.kittycash.io/"
+homepage = "https://www.kittycash.com/"
 min_version = "0.25.1"
 
 [author]
   name = "Kitty Cash"
-  homepage = "https://www.kittycash.io/"
+  homepage = "https://www.kittycash.com/"
