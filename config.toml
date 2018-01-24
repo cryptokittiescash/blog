@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Kitty Cash Blog"
 defaultContentLanguage = "en"
 
+relativeURLs = true
+canonifyURLs = true
+
 #googleAnalytics = ""
 #disqusShortname = ""
 
