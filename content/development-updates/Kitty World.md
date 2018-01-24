@@ -5,7 +5,7 @@ tags = [
 ]
 date = "2018-01-24"
 categories = [
-    "Out Story",
+    "Our Story",
 ]
 description = "Kitty World"
 +++
