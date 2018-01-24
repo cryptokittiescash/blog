@@ -6,7 +6,7 @@ defaultContentLanguage = "en"
 relativeURLs = true
 canonifyURLs = true
 
-#googleAnalytics = ""
+googleAnalytics = "UA-112845083-2"
 #disqusShortname = ""
 
 # hugo-xmin specific variables
