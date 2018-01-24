@@ -1,4 +1,4 @@
-baseURL = "https://kittycash.io/blog"
+baseURL = "https://www.kittycash.com/blog"
 languageCode = "en-us"
 title = "Kitty Cash Blog"
 defaultContentLanguage = "en"
@@ -37,8 +37,8 @@ pygmentsStyle = "murphy"
     weight = 3
 
 [[menu.footer]]
-  name = "kittycash.io"
-  url = "https://www.kittycash.io/"
+  name = "kittycash.com"
+  url = "https://www.kittycash.com/"
   weight = 1
 
 [[menu.footer]]
