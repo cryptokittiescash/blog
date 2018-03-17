@@ -1,7 +1,7 @@
 {
   "name": "kitty cash",
   "version": "1.0.0",
-  "description": "Foundations for the new kitties · Kitty Cash",
+  "description": "Foundations for the new kitties · KittyCash",
   "main": "index.js",
   "license": "UNLICENSED",
   "scripts": {

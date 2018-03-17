@@ -1,6 +1,6 @@
 baseURL = "https://www.kittycash.com/blog"
 languageCode = "en-us"
-title = "Kitty Cash Blog"
+title = "KittyCash Blog"
 defaultContentLanguage = "en"
 
 relativeURLs = true
@@ -50,45 +50,45 @@ pygmentsStyle = "murphy"
   weight = 2
 
 [author]
-  name = "Kitty Cash"
+  name = "KittyCash"
 
 [params]
   keywords = "kittycash"
   rss = "/index.xml"
   telegram = "https://t.me/kittycash"
-  description = "Kitty Cash Project Updates"
+  description = "KittyCash Project Updates"
   email = ""
   github = "kittycash"
 
 [Languages]
 [Languages.en]
   weight = -1
-  title = "Kitty Cash Blog"
+  title = "KittyCash Blog"
   languageName = "English"
 
 [Languages.es]
     weight = 4
-    title = "Kitty Cash Blog"
+    title = "KittyCash Blog"
     languageName = "Español"
 
 [Languages.de]
     weight = 5
-    title = "Kitty Cash Blog"
+    title = "KittyCash Blog"
     languageName = "Deutsch"
 
 [Languages.fr]
     weight = 8
-    title = "Kitty Cash Blog"
+    title = "KittyCash Blog"
     languageName = "Français"
 
 [Languages.pt]
     weight = 9
-    title = "Kitty Cash Blog"
+    title = "KittyCash Blog"
     languageName = "Português"
 
 [Languages.it]
     weight = 10
-    title = "Kitty Cash Blog"
+    title = "KittyCash Blog"
     languageName = "Italiano"
 
 [[menu.languages]]
