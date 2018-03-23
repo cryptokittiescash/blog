@@ -10,7 +10,7 @@ googleAnalytics = "UA-112845083-2"
 #disqusShortname = ""
 
 # hugo-xmin specific variables
-theme = "kittycash"
+theme = "kittycash-new"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
@@ -115,3 +115,7 @@ pygmentsStyle = "murphy"
   name = "Italiano"
   weight = 10
   url = "/it/"
+
+[outputs]
+    home = [ "HTML", "JSON"]
+    page = [ "HTML"]

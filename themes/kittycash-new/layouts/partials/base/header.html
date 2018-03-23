@@ -1,0 +1,39 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <div>
+      <img class="logo" src="/assets/images/logo.svg">
+      <a href="https://www.kittycash.com" class="header__link">&larr; Back to KittyCash</a>
+      </div>
+
+        <div class="dropdown">
+          {{ $currentLang := .Site.Language.LanguageName }}
+          <button class="btn btn-link header__link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ $currentLang }}
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            {{ range .Site.Menus.languages }}
+            <a class="dropdown-item" href="{{ .URL }}">{{ string .Name }}</a>
+            {{ end }}
+          </div>
+        </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-lg-4 offset-lg-4 col-md-12">
+      <div class="blog-title">
+        <h1>Blog</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 mt-5 text-center">
+       {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <a class="nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}nav__item--active{{end}}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+  </div>
+ 
+</header>
