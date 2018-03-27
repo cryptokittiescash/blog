@@ -4,19 +4,20 @@
   rel="alternate" type="application/json" title="{{ .Site.Title }}" />
   {{ range (where .Data.Pages "Section" "!=" "") }}
    <div class="row mb-5">
-    <div class="col-10">
+    <div class="col-md-10 col-sm-12">
+    
       <h1>{{ .Title }}</h1>
+      <p class="blog-date d-md-none">{{ .Date.Format "Jan 2 2006" }}</p>
       <p>{{ .Summary }}</p>
     </div>
-    <div class="col-2">
+    <div class="col-md-2 col-sm-12">
       <div class="mt-5">
-        <p class="blog-date pull-right">{{ .Date.Format "Jan 2 2006" }}</p>
+        <p class="blog-date pull-right d-none d-md-block">{{ .Date.Format "Jan 2 2006" }}</p>
         <a class="btn btn-lg btn-outline-primary pull-right" href="{{ .URL | relLangURL }}">Read more</a>
       </div>
     </div>
    </div>
    {{ end }}
-
    <div class="row mb-5">
     <div class="col-12">
       <a href="{{ .Site.Params.rss }}" target="_blank" class="btn btn-lg btn-outline-primary">Subscribe (RSS)</a>
