@@ -31,7 +31,7 @@
     <div class="col-12 mt-5 text-center">
        {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-          <a class="nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}nav__item--active{{end}}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+          <a class="nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}nav__item--active{{end}}" href="{{ .URL | relLangURL }}index.html">{{ .Name }}</a>
         {{ end }}
     </div>
   </div>

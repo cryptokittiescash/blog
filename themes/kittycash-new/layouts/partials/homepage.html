@@ -6,7 +6,7 @@
    <div class="row mb-5">
     <div class="col-md-10 col-sm-12">
     
-      <h1>{{ .Title }}</h1>
+      <h1><a href="{{ .URL | relLangURL }}">{{ .Title }}</a></h1>
       <p class="blog-date d-md-none">{{ .Date.Format "Jan 2 2006" }}</p>
       <p>{{ .Summary }}</p>
     </div>
